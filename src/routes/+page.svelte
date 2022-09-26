@@ -27,7 +27,7 @@
     </style>
 </svelte:head>
 
-<div class="noise"></div>
+<div class="noise"/>
 
 <svg style="position: absolute; top: 35px; left: 35px; z-index: 101;" width="108" height="25" viewBox="0 0 108 25" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 24.671H5.26405C5.26405 24.671 6.94545 19.5312 11.2016 19.5312C15.4578 19.5312 16.644 24.671 16.644 24.671H22.5964L14.8651 0L7.73126 0L0 24.671ZM6.41324 18.7738L11.2455 4.36882L15.9338 18.7738C15.9338 18.7738 14.3851 17.2638 11.2016 17.2638C8.01819 17.2638 6.41324 18.7738 6.41324 18.7738Z" fill="white"/>
