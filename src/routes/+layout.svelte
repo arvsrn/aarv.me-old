@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Archive, LightningBolt, TwitterLogo } from 'radix-icons-svelte';
+    import { Pencil2, TwitterLogo } from 'radix-icons-svelte';
 </script>
 
 <nav>
@@ -12,15 +12,12 @@
     </svg>    
 
     <div class="buttons">
-        <button>
-            <Archive/> Writing
-        </button>
-        <button>
-            <LightningBolt/> Lab
-        </button>
-        <button>
+        <a href="/writing">
+            <Pencil2/> Writing
+        </a>
+        <a href="https://www.twitter.com/arvsrn/">
             <TwitterLogo/>
-        </button>
+        </a>
     </div>
 </nav>
 
@@ -55,7 +52,7 @@
         height: fit-content;
     }
 
-    button {
+    a {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -73,6 +70,9 @@
         transition: opacity 0.15s, background 0.15s;
         opacity: 70%;
 
+        z-index: 100;
+        text-decoration: none;
+        
         cursor: pointer;
         border: none;
         outline: none;
@@ -80,7 +80,7 @@
         user-select: none;
     }
 
-    button:hover {
+    a:hover {
         opacity: 100%;
     }
 </style>
