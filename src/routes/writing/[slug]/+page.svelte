@@ -31,14 +31,14 @@
             12th August, 2022
         </div>
     </div>
-    <p>Lorem ipsum <a href="https://www.youtube.com">dolor sit amet, consectetur adipiscing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum <a href="/">dolor sit amet, consectetur adipiscing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <div class="code">
         let something = new Something();
         <span class="comment">// this is something</span>
     </div>
     <div class="seperator"/>
     <p>In mollis nunc sed id semper risus in hendrerit. Vitae et leo duis ut diam. Auctor elit sed vulputate mi sit amet mauris. Nunc faucibus a pellentesque sit amet porttitor. Nunc congue nisi vitae suscipit tellus. Sagittis vitae et leo duis. Amet venenatis urna cursus eget. Risus quis varius quam quisque id diam. Fames ac turpis egestas integer eget aliquet nibh praesent. Duis at consectetur lorem donec massa sapien faucibus et. Et netus et malesuada fames ac. Sed cras ornare arcu dui vivamus arcu felis bibendum. Tempus quam pellentesque nec nam aliquam sem et tortor consequat. Nulla porttitor massa id neque aliquam. Nulla facilisi morbi tempus iaculis urna id volutpat. In hendrerit gravida rutrum quisque non tellus orci ac auctor. Fringilla urna porttitor rhoncus dolor purus non enim praesent.</p>
-    <h2>This is a heading..</h2>
+    <h2>Lorem ipsum dolor sit amet..</h2>
     <p>Ut morbi tincidunt augue interdum velit euismod in pellentesque massa. Et magnis dis parturient montes. Mi sit amet mauris commodo. Mauris commodo quis imperdiet massa tincidunt. Accumsan lacus vel facilisis volutpat est velit. Sodales neque sodales ut etiam. Nisl vel pretium lectus quam id leo in. Bibendum enim facilisis gravida neque convallis. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Eleifend mi in nulla posuere sollicitudin aliquam ultrices. Tortor vitae purus faucibus ornare suspendisse sed nisi. Sed egestas egestas fringilla phasellus faucibus. Quis enim lobortis scelerisque fermentum dui faucibus in ornare.</p>
 </main>
 

@@ -72,7 +72,7 @@
     }
 
     h6 {
-        font-family: 'Manrope';
+        font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
@@ -94,7 +94,7 @@
     }
 
     p {
-        font-family: 'Manrope';
+        font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -149,7 +149,7 @@
     }
 
     button.project {
-        font-family: 'Manrope';
+        font-family: 'Inter';
         font-style: normal;
         font-weight: 600;
         font-size: 16px;

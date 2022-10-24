@@ -62,7 +62,7 @@
 
         font-family: 'Inter';
         font-size: 14px;
-        font-weight: 500;
+        font-weight: normal;
 
         color: white;
         background: transparent;
