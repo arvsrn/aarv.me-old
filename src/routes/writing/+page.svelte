@@ -1,6 +1,6 @@
 <main>
     <h1>Writing</h1>
-    <a href="/writing/sit amet">Lorem ipsum dolor sit amet <span>12/10/22</span></a>
+    <a href="/writing/recreating-svelte-1">Recreating Svelte #1<span>27/10/22</span></a>
 </main>
 
 <style>
