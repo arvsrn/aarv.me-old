@@ -1,6 +1,5 @@
 <script lang="ts">
     import { Calendar } from "radix-icons-svelte";
-    import VideoPlayer from 'svelte-video-player';
 
     let codeblock1 = `class Component {
     element: HTMLElement;
@@ -145,6 +144,10 @@ function fromNodes(nodes: Array<CompilerElement | Block>, parent: HTMLElement, p
         ::-webkit-scrollbar-thumb {
             background: rgba(255, 255, 255, 0.4);
         }
+
+        body {
+            overflow-x: hidden;
+        }
     </style>
 </svelte:head>
 
@@ -194,6 +197,11 @@ function fromNodes(nodes: Array<CompilerElement | Block>, parent: HTMLElement, p
         display: flex;
         flex-direction: column;
         gap: 12px;
+    }
+
+    iframe {
+        width: 700px;
+        height: 400px;
     }
 
     p.quote {
@@ -323,6 +331,11 @@ function fromNodes(nodes: Array<CompilerElement | Block>, parent: HTMLElement, p
     @media only screen and (max-width: 700px) {
         main {
             width: 90vw;
+        }
+
+        iframe {
+            width: 90vw;
+            height: 60vw;
         }
     }
 
