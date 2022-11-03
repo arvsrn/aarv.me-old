@@ -1,15 +1,27 @@
 <main>
-    <h1>Writing</h1>
-    <a href="/writing/recreating-svelte-1">Recreating Svelte #1<span>27/10/22</span></a>
+    <main>
+        <h1>Writing</h1>
+        <a href="/writing/recreating-svelte-1/"><span>27/10/22</span>&nbsp;Recreating Svelte #1</a>
+    </main>
 </main>
 
 <style>
     main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-top: 50px;
+    }
+
+    main > main {
         width: 600px;
         height: fit-content;
         
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
+
         gap: 4px;
     }
 
@@ -40,20 +52,20 @@
 
     span {
         font-size: inherit;
-        font-family: inherit;
-        color: #EDEDED;
+        font-family: 'IBM Plex Serif';
+        font-style: normal;
+        color: #a0a0a0;
 
         opacity: inherit;
-
-        margin-left: auto;
     }
 
     h1 {
-        color: rgba(255, 255, 255, 0.75);
+        color: white;
 
         font-size: 1.5em;
         font-weight: 700;
-        font-family: 'Inter';
+        font-family: 'IBM Plex Serif';
+        font-style: italic;
         padding: 12px 0px;
     }
 

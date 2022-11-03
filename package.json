@@ -1,5 +1,5 @@
 {
-	"name": "portfolio-v6",
+	"name": "portfolio-v7",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
@@ -21,10 +21,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@types/puppeteer": "^5.4.7",
-		"puppeteer": "^19.1.0",
-		"radix-icons-svelte": "^1.2.1",
-		"svelte-highlight": "^6.2.1",
-		"svelte-video-player": "^1.2.5"
+		"radix-icons-svelte": "^1.2.1"
 	}
 }
