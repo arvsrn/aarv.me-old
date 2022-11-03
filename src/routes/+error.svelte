@@ -23,15 +23,25 @@
 </svg>    
 
 <main>
-    <h6 class="light">{$page.status}—{$page.error?.message || 'Unknown error'}</h6>
-    <a href="/">Home</a>
-    <a href="/writing">Writing</a>
-    <a href="https://www.twitter.com/arvsrn">Twitter</a>
-    <a href="https://www.buymeacoffee.com/arvsrn">Buymeacoffee ☕</a>
+    <main>
+        <h6 class="light">{$page.status}—{$page.error?.message || 'Unknown error'}</h6>
+        <a href="/">Home</a>
+        <a href="/writing">Writing</a>
+        <a href="https://www.twitter.com/arvsrn">Twitter</a>
+        <a href="https://www.buymeacoffee.com/arvsrn">Buymeacoffee ☕</a>
+    </main>
 </main>
 
 <style>
     main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-top: 150px;
+    }
+
+    main > main {
         width: 45vw;
         max-width: 600px;
         height: fit-content;
@@ -44,11 +54,12 @@
     }
 
     h6 {
-        font-family: 'Inter';
+        font-family: 'IBM Plex Serif';
         font-style: normal;
         font-weight: 700;
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 20px;
+        line-height: 28px;
+        font-style: italic;
         
         letter-spacing: 0.01em;
     }
