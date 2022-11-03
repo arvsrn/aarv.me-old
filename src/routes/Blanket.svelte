@@ -2,6 +2,14 @@
     export let onclick: () => void;
 </script>
 
+<svelte:head>
+    <style>
+        body {
+            overflow: hidden;
+        }
+    </style>
+</svelte:head>
+
 <main on:click|self={onclick}>
     <slot></slot>
 </main>
