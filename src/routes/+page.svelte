@@ -152,7 +152,7 @@
         font-family: 'IBM Plex Serif';
         font-style: italic;
         font-weight: 600;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 24px;
         
         display: flex;
@@ -199,8 +199,8 @@
         }
 
         h2 {
-            font-size: 3.9vw;
-            line-height: 4.9vw;
+            font-size: clamp(20px, 3.9vw, 36px);
+            line-height: clamp(24px, 4.0vw, 36px);
         }
 
         p {
