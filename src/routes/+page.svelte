@@ -37,7 +37,7 @@
         <h3 in:fade={{duration: duration * 18}}>Projects</h3>
         <div in:fade={{duration: duration * 18}}>
             {#each projects as project, i}
-                <Project color={project.color} onclick={() => {projectI = i; show = true}} data={{name: project.name, description: project.shortDescription, github: project.githubLink}} />
+                <Project color={project.color} onclick={() => {projectI = i; show = true; window.scrollTo(0, 0)}} data={{name: project.name, description: project.shortDescription, github: project.githubLink}} />
             {/each}
         </div>
     </main>

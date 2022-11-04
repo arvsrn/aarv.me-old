@@ -338,6 +338,11 @@ function fromNodes(nodes: Array<CompilerElement | Block>, parent: HTMLElement, p
     
     @media only screen and (max-width: 700px) {
         main {
+            display: flex;
+            align-items: center;
+        }
+
+        main > main {
             width: 90vw;
         }
 

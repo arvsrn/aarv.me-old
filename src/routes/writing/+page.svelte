@@ -71,6 +71,11 @@
 
     @media only screen and (max-width: 630px) {
         main {
+            display: flex;
+            align-items: center;
+        }
+
+        main > main {
             width: 90vw;
         }
     }
