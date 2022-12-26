@@ -1,13 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600;700&family=IBM+Plex+Serif:ital,wght@0,400;1,600;1,700&family=Inter:wght@400;500;600;700;800;900&display=swap');
-
-body {
-    background: linear-gradient(90deg, #111 21px, transparent 1%) center, linear-gradient(#111 21px, transparent 1%) center, #323232;
-	background-size: 22px 22px;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@font-face {
+    font-family: 'Fakt Pro';
+    src: url('./FaktPro-Normal.ttf');
 }
 
 * {
-    box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+}
+
+body {
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+}
+
+[data-animate] {
+    animation: enter .6s both;
+    -webkit-animation-delay: calc(var(--stagger) * 120ms);
+    animation-delay: calc(var(--stagger) * 120ms);
+}
+
+@keyframes enter { 
+    from {
+        transform: translateY(25px);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+
+::selection {
+    background: rgba(50, 151, 253, 0.15);
+    color: black;
 }
