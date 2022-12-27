@@ -1,8 +1,8 @@
 <main data-animate style="--stagger: 5;">
     <h2>Select writing</h2>
-    <a href="/">
-        <span>NaN</span>
-        [coming soon]
+    <a href="/writing/figma-inspired-viewport/" data-info="In this post, I build a viewport component inspired by Figma using the Javascript Canvas API.">
+        <span>4/1/23</span>
+        Figma/Framer inspired Viewport component
     </a>
 </main>
 

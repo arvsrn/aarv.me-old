@@ -21,9 +21,9 @@
             </svg>
             <div class="after"></div>
         </div>
-        <p data-animate style="--stagger: 2;">Aarav Sareen — Full stack developer and visual designer. Building polished software and web experiences. Reach me at <a href="mailto:contact@aarv.me">contact@aarv.me</a>.</p>
+        <p data-animate style="--stagger: 2;">Aarav Sareen — Passionate developer and visual designer constantly learning and creating meaningful projects. Reach me at <a href="mailto:contact@aarv.me">contact@aarv.me</a>.</p>
         <h2 data-animate style="--stagger: 3">Now</h2>
-        <p data-animate style="--stagger: 3">Focusing on front-end development and web technologies such as WebGL, WebAssembly (with Rust) and playing a lot of chess.</p>
+        <p data-animate style="--stagger: 3">Focusing a bit more on my hobbies this year, like music and chess. Constantly learning and building cool shit. Experimenting with design.</p>
         <Projects></Projects>
     </div>
 </main>
