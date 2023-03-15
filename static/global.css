@@ -13,6 +13,9 @@
 body {
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
+
+    font-family: 'Fakt Pro';
+    font-size: 14.5px;
 }
 
 [data-animate] {
@@ -35,5 +38,17 @@ body {
 
 ::selection {
     background: rgba(50, 151, 253, 0.15);
-    color: black;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #161616;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
 }
