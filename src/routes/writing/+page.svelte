@@ -2,8 +2,12 @@
     <div class="container">
         <p class="heading">Writing</p>
         <p class="heading" style="margin-bottom:16px;">
-            <span class="dark">Thoughts & experiments. Nothing here yet :/</span>
-        </p>    
+            <span class="dark">Thoughts & experiments.</span>
+        </p>
+
+        <div class="article">
+            <a href="/writing/redesign-2023">Redesign '23</a> <span class="right">20 March 2023</span>
+        </div>
     </div>
 </main>
 
