@@ -30,7 +30,7 @@
         </div>
 
         <div class="carousel">
-            <h3>SVELTEKIT · NEXTJS · TYPESCRIPT · RUST · PYTHON · FIGMA · SVELTEKIT · NEXTJS · TYPESCRIPT · RUST · PYTHON · FIGMA ·</h3>
+            <h3>SVELTEKIT · NEXT.JS · TYPESCRIPT · RUST · PYTHON · FIGMA · SVELTEKIT · NEXT.JS · TYPESCRIPT · RUST · PYTHON · FIGMA</h3>
         </div>
     </div>
 
@@ -241,7 +241,7 @@
         font-weight: 500;
         color: #505050;
 
-        width: 1179px !important;
+        width: 1180px !important;
         word-wrap: normal;
 
         animation: carousel 10s linear 0s infinite;
@@ -249,12 +249,12 @@
     }
 
     @keyframes carousel {
-        0% {
-            transform: translateX(0%);
+        from {
+            transform: translateX(0px);
         }
 
-        100% {
-            transform: translateX(-51%);
+        to {
+            transform: translate(-568px);
         }
     }
 </style>
