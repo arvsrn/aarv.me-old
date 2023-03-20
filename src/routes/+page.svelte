@@ -241,7 +241,7 @@
         font-weight: 500;
         color: #505050;
 
-        width: 100vw;
+        width: 1179px !important;
         word-wrap: normal;
 
         animation: carousel 10s linear 0s infinite;
