@@ -3,7 +3,7 @@
 </script>
 
 <main>
-    <div class="container" data-animate style="--stagger:1;">
+    <div class="container" data-animate style="--stagger:1;" id="glasses">
         <div class="noggle-container">
             <div class="before"></div>
             <svg width="48" height="18" viewBox="0 0 48 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -20,13 +20,17 @@
             </svg>
             <div class="after"></div></div>
 
-        <p>Aarav Sareen. Passionate about web development, obsessed with details & interface design. I like to craft meaningful web applications.</p>
+        <p>Aarav Sareen. Passionate about web development, obsessed with details & interface design. I like to craft meaningful web applications. I also do general programming sometimes.</p>
         <div style="display:flex;flex-direction:row;align-items:flex-start;padding:0px;gap:8px;">
             <!--
                 <ButtonLink href="">Freelance →</ButtonLink>
             -->
             <ButtonLink href="/writing">Writing</ButtonLink>
             <ButtonLink href="/archive">Archive</ButtonLink>
+        </div>
+
+        <div class="carousel">
+            <h3>SVELTEKIT · NEXTJS · TYPESCRIPT · RUST · PYTHON · FIGMA · SVELTEKIT · NEXTJS · TYPESCRIPT · RUST · PYTHON · FIGMA ·</h3>
         </div>
     </div>
 
@@ -38,7 +42,15 @@
             Projects
         </p>
         <div style="display:flex;flex-direction:column;align-items:flex-start;padding:24px 0px;gap:6px;width:100%;height:fit-content;border-top:1px solid #2E2E2E;">
-            <p>refresh <span class="dark">from 2023</span></p>
+            <p>lace-lang <span class="dark">from 2023</span> <span class="ongoing"><div class="dot"/> <span>Ongoing</span></span></p>
+            <p>A procedural programming language inspired by Rust, Typescript and Python.</p>
+            <div style="display:flex;flex-direction:row;align-items:flex-start;padding:0px;gap:8px;margin-top:8px;">
+                <ButtonLink href="https://refresh.aarv.me/">Visit →</ButtonLink>
+                <ButtonLink href="" disabled>Github</ButtonLink>
+            </div>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:flex-start;padding:24px 0px;gap:6px;width:100%;height:fit-content;border-top:1px solid #2E2E2E;">
+            <p>refresh <span class="dark">from 2023</span> <span class="ongoing"><div class="dot"/> <span>Ongoing</span></span></p>
             <p>A beautiful icon set. New icons added monthly.</p>
             <div style="display:flex;flex-direction:row;align-items:flex-start;padding:0px;gap:8px;margin-top:8px;">
                 <ButtonLink href="https://refresh.aarv.me/">Visit →</ButtonLink>
@@ -127,6 +139,10 @@
         width: var(--width);
         height: fit-content;
         color: #ededed;
+
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
     }
 
     p.container-heading {
@@ -154,5 +170,91 @@
 
     span {
         color: #7E7E7E;
+    }
+
+    span.ongoing {
+        background: #232323;
+        color: #7E7E7E;
+        border-radius: 100px;
+
+        width: fit-content;
+        height: fit-content;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+
+        padding: 2px 6px;
+        font-size: 11px;
+    }
+
+    span.ongoing > span {
+        transform: translateY(1px);
+    }
+
+    div.dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 4px;
+
+        background: #1cc88a;
+    }
+
+    div.dot::before {
+        content: '';
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-radius: 4px;
+        background: #1cc88a;
+        animation: 1.5s anim ease-out;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes anim {
+        0% {
+            transform: scale(1);
+            opacity: 50%;
+        }
+
+        100% {
+            transform: scale(2.5);
+            opacity: 0%;
+        }
+    }
+
+    div.carousel {
+        width: 100%;
+        height: fit-content;
+
+        overflow-x: hidden;
+        position: relative;
+
+        margin-top: 16px;
+    }
+
+    div.carousel > h3 {
+        font-size: 16px;
+        font-family: 'Supply Mono';
+        font-weight: 500;
+        color: #505050;
+
+        width: 100vw;
+        word-wrap: normal;
+
+        animation: carousel 10s linear 0s infinite;
+        user-select: none;
+    }
+
+    @keyframes carousel {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(-51%);
+        }
     }
 </style>

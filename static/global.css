@@ -4,6 +4,11 @@
     src: url('./FaktPro-Normal.ttf');
 }
 
+@font-face {
+    font-family: 'Supply Mono';
+    src: url('./PPSupplyMono-Regular.otf');
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -16,6 +21,8 @@ body {
 
     font-family: 'Fakt Pro';
     font-size: 14.5px;
+
+    background-color: #161616;
 }
 
 [data-animate] {
