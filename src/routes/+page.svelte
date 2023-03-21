@@ -43,7 +43,7 @@
         </p>
         <div style="display:flex;flex-direction:column;align-items:flex-start;padding:24px 0px;gap:6px;width:100%;height:fit-content;border-top:1px solid #2E2E2E;">
             <p>lace-lang <span class="dark">from 2023</span> <span class="ongoing"><div class="dot"/> <span>Ongoing</span></span></p>
-            <p>A procedural programming language inspired by Rust, Typescript and Python.</p>
+            <p>A procedural interpreted programming language inspired by Rust, Typescript and Python.</p>
             <div style="display:flex;flex-direction:row;align-items:flex-start;padding:0px;gap:8px;margin-top:8px;">
                 <ButtonLink href="" disabled>Visit →</ButtonLink>
                 <ButtonLink href="https://www.github.com/arvsrn/lace-lang">Github</ButtonLink>
