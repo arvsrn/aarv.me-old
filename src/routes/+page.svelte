@@ -190,10 +190,6 @@
         font-size: 11px;
     }
 
-    span.ongoing > span {
-        transform: translateY(1px);
-    }
-
     div.dot {
         width: 6px;
         height: 6px;
