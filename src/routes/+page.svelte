@@ -32,11 +32,11 @@
         </div>
     </div>
 
-    <div class="carousel">
+    <div class="carousel" data-animate style="--stagger:3;">
         <h3>SVELTEKIT · NEXT.JS · TYPESCRIPT · RUST · PYTHON · FIGMA · SVELTEKIT · NEXT.JS · TYPESCRIPT · RUST · PYTHON · FIGMA</h3>
     </div>
 
-    <div class="container nogap" data-animate style="--stagger:3;">
+    <div class="container nogap" data-animate style="--stagger:4;">
         <p class="container-heading">
             <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.62499 0.0497131V6.375H11.2145L4.37499 15.9503V9.625H0.785492L7.62499 0.0497131ZM3.21448 8.375H5.62499V12.0497L8.78549 7.625H6.37499V3.95029L3.21448 8.375Z" fill="currentColor"/>
@@ -69,7 +69,7 @@
         </div>
     </div>
 
-    <div class="container nogap" data-animate style="--stagger:4;">
+    <div class="container nogap" data-animate style="--stagger:5;">
         <p class="container-heading">
             <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.375 0L9.375 11L8.125 11L8.125 -1.09278e-07L9.375 0ZM4.19194 8.94194L3.30806 8.05806L5.24112 6.125L0.25 6.125L0.250001 4.875L5.24112 4.875L3.30806 2.94194L4.19194 2.05806L7.63388 5.5L4.19194 8.94194Z" fill="currentColor"/>
