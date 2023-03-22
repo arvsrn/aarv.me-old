@@ -3,9 +3,19 @@
 </script>
 
 <main>
-    <div class="container smallgap">
-        <p class="heading">Error.</p>
-        <p>{$page.error?.message}</p>
+    <div class="container">
+        <p class="heading">Error: {$page.error?.message}</p>
+        <p>The exciting thing is what something could become, not what it is. The sooner something goes into the world, the sooner it can be made better. </p>
+        <p>So done is better than perfect.</p>
+        <p>But done is never finished.</p>
+        <p>Today's 404 page is tomorrow's breakthrough.<br>It's the nature of the internet.</p>
+        
+        <div class="divider"></div>
+
+        <div class="container smallgap">
+            <a href="/">Twitter</a>
+            <a href="/">Back to home</a>
+        </div>
     </div>
 </main>
 
@@ -52,13 +62,29 @@
         flex-direction: column;
         align-items: flex-start;
         padding: 0px;
-        gap: 10px;
+        gap: 16px;
 
         width: var(--width);
         height: fit-content;
     }
 
     .smallgap {
-        gap: 5px !important;
+        gap: 8px !important;
+    }
+
+    a {
+        text-decoration: none;
+        color: #a0a0a0;
+    }
+
+    a::before {
+        content: '→ ';
+    }
+
+    div.divider {
+        width: 100%;
+        height: 1px;
+        background-color: #232323;
+        margin: 16px 0px;
     }
 </style>
