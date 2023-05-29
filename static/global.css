@@ -22,7 +22,8 @@ body {
     font-family: 'Fakt Pro';
     font-size: 14.5px;
 
-    background-color: #161616;
+    background-color: #111111;
+    color: #ededed;
 }
 
 [data-animate] {
@@ -53,7 +54,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: #161616;
+    background: #0a0a0a;
 }
 
 ::-webkit-scrollbar-thumb {

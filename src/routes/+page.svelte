@@ -1,260 +1,206 @@
 <script>
-    import ButtonLink from "./ButtonLink.svelte";
+    import PlaceholderProject from "./PlaceholderProject.svelte";
+
+    const date = new Date();
+    let localTime = date.getTime();
+    let localOffset = date.getTimezoneOffset() * 60000;
+
+    let utc = localTime + localOffset;
+    let time = new Date(utc + 19_800_000);
+
+    const setTime = () => {
+        const date = new Date();
+        let localTime = date.getTime();
+        let localOffset = date.getTimezoneOffset() * 60000;
+
+        let utc = localTime + localOffset;
+        time = new Date(utc + 19_800_000);
+
+        setTimeout(setTime, 60_000);
+    };
+
+    setTimeout(setTime, 60_000);
 </script>
 
 <main>
-    <div class="container" data-animate style="--stagger:2;" id="glasses">
-        <div class="noggle-container">
-            <div class="before"></div>
-            <svg width="48" height="18" viewBox="0 0 48 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_31_30)">
-            <path d="M0.0498047 14.7898V6.03077H9.1488V0.0927734H26.8998V6.03077H30.0318V0.0927734H47.9318V17.9068H30.0318V8.99977H26.8998V17.9068H9.1488V8.99977H3.1818V14.7898H0.0498047Z" fill="#A0A0A0"/>
-            <path d="M17.9868 3.06201H23.9908V14.938H17.9868V3.06201Z" fill="#A0A0A0"/>
-            <path d="M38.8008 3.06201H44.8048V14.938H38.8008V3.06201Z" fill="#A0A0A0"/>
-            </g>
-            <defs>
-            <clipPath id="clip0_31_30">
-            <rect width="48" height="18" fill="black"/>
-            </clipPath>
-            </defs>
-            </svg>
-            <div class="after"></div></div>
+    <div class="gradient"></div>
 
-        <p>Aarav Sareen. Passionate about web development, obsessed with details & interface design. I like to craft meaningful web applications.</p>
-        <p style="margin-top: 16px;">Now</p>
-        <p>Focusing on health. Exploring novel concepts like math, machine learning & systems programming. Creating stuff on the web.</p>
-        <div style="display:flex;flex-direction:row;align-items:flex-start;padding:0px;gap:8px;margin-top:16px;">
-            <!--
-                <ButtonLink href="">Freelance →</ButtonLink>
-            -->
-            <ButtonLink href="/writing">Writing</ButtonLink>
-            <ButtonLink href="/archive">Archive</ButtonLink>
-        </div>
-    </div>
-
-    <div class="carousel" data-animate style="--stagger:3;">
-        <h3>SVELTEKIT · NEXT.JS · TYPESCRIPT · RUST · PYTHON · FIGMA · SVELTEKIT · NEXT.JS · TYPESCRIPT · RUST · PYTHON · FIGMA</h3>
-    </div>
-
-    <div class="container nogap" data-animate style="--stagger:4;">
-        <p class="container-heading">
-            <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.62499 0.0497131V6.375H11.2145L4.37499 15.9503V9.625H0.785492L7.62499 0.0497131ZM3.21448 8.375H5.62499V12.0497L8.78549 7.625H6.37499V3.95029L3.21448 8.375Z" fill="currentColor"/>
-            </svg>
-            Projects
-        </p>
-        <div style="display:flex;flex-direction:column;align-items:flex-start;padding:24px 0px;gap:6px;width:100%;height:fit-content;border-top:1px solid #2E2E2E;">
-            <p>lace-lang <span class="dark">from 2023</span> <span class="ongoing"><div class="dot"/> <span>Ongoing</span></span></p>
-            <p>A procedural programming language inspired by Rust, Typescript and Python.</p>
-            <div style="display:flex;flex-direction:row;align-items:flex-start;padding:0px;gap:8px;margin-top:8px;">
-                <ButtonLink href="" disabled>Visit →</ButtonLink>
-                <ButtonLink href="https://www.github.com/arvsrn/lace-lang">Github</ButtonLink>
+    <section data-animate style:--stagger="1" style:gap="24px">
+        <div class="row" style:align-items="center">
+            <div>
+                <p>Aarav Sareen</p>
+                <p class="dark">Web Developer & Designer</p>
             </div>
-        </div>
-        <div style="display:flex;flex-direction:column;align-items:flex-start;padding:24px 0px;gap:6px;width:100%;height:fit-content;border-top:1px solid #2E2E2E;">
-            <p>refresh <span class="dark">from 2023</span> <span class="ongoing"><div class="dot"/> <span>Ongoing</span></span></p>
-            <p>A beautiful icon set. New icons added monthly.</p>
-            <div style="display:flex;flex-direction:row;align-items:flex-start;padding:0px;gap:8px;margin-top:8px;">
-                <ButtonLink href="https://refresh.aarv.me/">Visit →</ButtonLink>
-                <ButtonLink href="" disabled>Github</ButtonLink>
-            </div>
-        </div>
-        <div style="display:flex;flex-direction:column;align-items:flex-start;padding:24px 0px;gap:6px;width:100%;height:fit-content;border-top:1px solid #2E2E2E;">
-            <p>mesh <span class="dark">from 2022</span></p>
-            <p>Create beautiful SVG mesh gradients. Built with SvelteKit.</p>
-            <div style="display:flex;flex-direction:row;align-items:flex-start;padding:0px;gap:8px;margin-top:8px;">
-                <ButtonLink href="https://mesh.aarv.me/">Visit →</ButtonLink>
-                <ButtonLink href="https://github.com/arvsrn/mesh">Github</ButtonLink>
-            </div>
-        </div>
-    </div>
-
-    <div class="container nogap" data-animate style="--stagger:5;">
-        <p class="container-heading">
-            <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.375 0L9.375 11L8.125 11L8.125 -1.09278e-07L9.375 0ZM4.19194 8.94194L3.30806 8.05806L5.24112 6.125L0.25 6.125L0.250001 4.875L5.24112 4.875L3.30806 2.94194L4.19194 2.05806L7.63388 5.5L4.19194 8.94194Z" fill="currentColor"/>
+            <svg style:margin-left="auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 12C4 12 12 9.6 12 0C12 4 14.4 12 24 12C20 12 12 14.4 12 24C12 20 9.6 12 0 12Z" fill="#EDEDED" stroke="#EDEDED"/>
             </svg>                
-            Connect
-        </p>
-        <div style="display:flex;flex-direction:column;align-items:flex-start;padding:24px 0px;gap:15px;width: 100%;height: fit-contents;border-top:1px solid #2E2E2E;">
-            <p>Twitter <span class="dark">@arvsrn</span></p>
-            <p>Github <span class="dark">@arvsrn</span></p>
-            <p>Email <span class="dark">contact@aarv.me</span></p>
         </div>
-    </div>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+            <p>Passionate about web development, obsessed with details & interface design. I like to craft meaningful web applications.</p>
+            <p>Working on a lot of epic sh#t. More projects to come in the (near) future.</p>
+        </div>
+        <div class="row">
+            <a href="" class="disabled" data-info="Will be available for work soon.">Freelance</a>
+            <a href="" class="disabled" data-info="Coming soon.">Writing</a>
+        </div>
+    </section>
+
+    <section style:gap="0px" data-animate style:--stagger="2">
+        <p class="section-heading">(Freelance) Projects</p>
+        <div class="divider"></div>
+        <PlaceholderProject />
+        <div class="divider"></div>
+    </section>
+    <section style:gap="0px" data-animate style:--stagger="3">
+        <p class="section-heading">(Hobby) Projects</p>
+        <div class="divider"></div>
+        <div style:padding="16px 0px" style:gap="8px">
+            <p>mesh <span style:color="#555555">from 2022</span></p>
+            <p class="dark">Simple web-based tool to generate & edit SVG mesh gradients.</p>
+            <a href="" class="arrow">Visit</a>
+        </div>
+        <div class="divider"></div>
+    </section>
+
+    <section data-animate style:--stagger="4">
+        <div class="row">
+            <p style:color="#555555">Crafted with love. <a href="">View source</a> (V12)</p>
+            <p style:margin-left="auto" style:color="#555555" data-info="GMT +5:30 (India)" style:cursor="default">{time.getHours()}.{time.getMinutes()} local time</p>
+        </div>
+        <div class="row" style:align-items="center">
+            <p style:color="#555555" style:flex="none">Get in touch</p>
+            <div class="divider"></div>
+            <div class="row" style:margin-left="auto">
+                <a href="https://www.posts.cv/arvsrn">posts.cv</a>
+                <a href="" class="disabled" data-info="My email server doesn't work aah">email</a>
+            </div>
+        </div>
+    </section>
 </main>
 
 <style>
     main {
-        width: 100%;
-        min-height: 100vh;
-        height: fit-content;
-        
+        width: 100vw;
+        height: 100vh;
+
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 100px 0px;
-        gap: 65px;
+        padding: 64px 0px;
 
-        background: #161616;
+        overflow-y: scroll;
     }
 
-    div.container {
+    section {
+        width: 500px;
+        height: fit-content;
+
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-
-        width: var(--width);
-        height: fit-content;
+        gap: 16px;
+        padding: 24px 0px;
     }
 
-    div.noggle-container {
-        position: relative;
-        width: fit-content;
-        height: fit-content;
-    }
-
-    div.before, div.after {
-        position: absolute;
-        width: 6px;
-        height: 12px;
-        top: 3px;
-        background-color: #161616;
-        transition: transform 0.2s cubic-bezier(0.4,2,0.68,1);
-    }
-
-    div.before {
-        left: 18px;
-    }
-
-    div.after {
-        left: 39px;
-    }
-
-    div.noggle-container:hover div.before,
-    div.noggle-container:hover div.after {
-        transform: translateX(-6px);
-    }
-
-    p {
-        width: var(--width);
-        height: fit-content;
-        color: #ededed;
-
+    div {
         display: flex;
-        flex-direction: row;
-        gap: 6px;
-    }
-
-    p.container-heading {
-        width: 100%;
-        height: 32px;
-
-        line-height: 32px;
-        
-        color: #A0A0A0;
-        user-select: none;
-
-        display: flex;
-        flex-direction: row;
-        gap: 6px;
-        align-items: center;
-    }
-
-    p.container-heading > svg {
-        transform: translateY(-2px)
-    }
-
-    div.nogap {
-        gap: 0px !important;
-    }
-
-    span {
-        color: #7E7E7E;
-    }
-
-    span.ongoing {
-        background: #232323;
-        color: #7E7E7E;
-        border-radius: 100px;
-
-        width: fit-content;
-        height: fit-content;
-
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
         gap: 4px;
-
-        padding: 2px 6px;
-        font-size: 11px;
     }
 
-    span.ongoing > span {
-        transform: translateY(1px);
+    div.divider {
+        width: 100%;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.05);
     }
 
-    div.dot {
-        width: 6px;
-        height: 6px;
-        border-radius: 4px;
+    div.gradient {
+        width: 100vw;
+        position: absolute;
+        top: -50px;
+        left: 0px;
+        height: 30px;
 
-        background: #1cc88a;
+        will-change: transform;
+        filter: blur(60px);
+        -webkit-filter: blur(60px);
+        -moz-filter: blur(60px);
+        background-color: #ededed;
+
+        animation: gradient 10s ease infinite;
+        pointer-events: none;
     }
 
-    div.dot::before {
-        content: '';
-        display: block;
-        width: 6px;
-        height: 6px;
-        border-radius: 4px;
-        background: #1cc88a;
-        animation: 1.5s anim ease-out;
-        animation-iteration-count: infinite;
+    div.row {
+        flex-direction: row;
+        gap: 16px;
     }
 
-    @keyframes anim {
-        0% {
-            transform: scale(1);
-            opacity: 50%;
+    p.dark {
+        color: #7e7e7e;
+    }
+
+    p.section-heading {
+        font-size: 13.25px;
+        color: #7e7e7e;
+        font-weight: 500;
+        margin-bottom: 8px;
+        user-select: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #7e7e7e;
+        transition: color 0.15s ease;
+    }
+
+    a.disabled:hover {
+        text-decoration: line-through;
+    }
+    
+    a:hover {
+        color: #ededed;
+    }
+
+    .arrow::after {
+        content: "→";
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-left: 2px;
+        transition: margin-left 0.15s ease;
+    }
+
+    .arrow:hover::after {
+        margin-left: 6px;
+    }
+
+    @keyframes gradient {
+        from {
+            background-color: #FC4F4F;
+        }
+
+        20% {
+            background-color: #D36D41;
+        }
+
+        40% {
+            background-color: #57CE55;
+        }
+
+        60% {
+            background-color: #4191DB;
+        }
+
+        80% {
+            background-color: #C072F0;
         }
 
         100% {
-            transform: scale(2.5);
-            opacity: 0%;
+            background-color: #FC4F4F;
         }
     }
 
-    div.carousel {
-        width: var(--width);
-        height: fit-content;
-
-        overflow-x: hidden;
-        position: relative;
-    }
-
-    div.carousel > h3 {
-        font-size: 16px;
-        font-family: 'Supply Mono';
-        font-weight: 500;
-        color: #505050;
-
-        width: 1180px !important;
-        word-wrap: normal;
-
-        animation: carousel 10s linear 0s infinite;
-        user-select: none;
-    }
-
-    @keyframes carousel {
-        from {
-            transform: translateX(0px);
-        }
-
-        to {
-            transform: translate(-568px);
+    @media only screen and (max-width: 594.24px) {
+        section {
+            width: 84vw;
         }
     }
 </style>
