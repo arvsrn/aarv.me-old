@@ -1,6 +1,10 @@
 <script lang="ts">
     import { onMount } from "svelte";
     import { slide } from "svelte/transition";
+    import { dev } from '$app/environment';
+    import { inject } from '@vercel/analytics';
+    
+    inject({ mode: dev ? 'development' : 'production' });
 
     let hovering: boolean = false;
     let mousePosition: number[] = [0, 0];
