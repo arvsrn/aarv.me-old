@@ -3,7 +3,6 @@
     import Image from "./Image.svelte";
     import Music from "./Music.svelte";
 
-    const date = new Date();
     let time: Date;
     let copied = false;
 
@@ -33,11 +32,11 @@
         <div class="responsive h-fit flex flex-col gap-3">
             <div class="flex flex-col">
                 <p class="text-sm text-white font-[500]">Aarav Sareen</p>
-                <p class="text-[11px] leading-6 text-white/50 mono">DESIGNER, FULL STACK DEVELOPER</p>
+                <p class="text-[11px] leading-6 text-white/50 mono">DESIGN ENGINEER</p>
             </div>
 
             <p class="text-[13px] leading-[22px] text-white font-[400]">
-                Currently designing and building interfaces at <a href="https://www.unriddle.ai">Unriddle</a>. On the side, building <a href="https://www.x.com/runicdesign">@runicdesign</a>, a component kit and <span class="text-white/50">████, a project management tool</span>.
+                Currently designing and building interfaces at <a href="https://www.unriddle.ai">Unriddle</a>. On the side, building <a href="https://www.x.com/runicdesign">@runicdesign</a>, a component kit and <span class="text-[#A0A0A0]">██████, a project management tool</span>.
             </p>
 
             <div class="flex flex-col">
@@ -47,6 +46,16 @@
                 <p class="text-[11px] leading-[18px] text-white/50 mono">VERSION 20</p>
             </div>
 
+            <!--
+            <div class="flex flex-row text-[#FFCA16] items-center gap-1 select-none">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.86113 2.43572C8.47194 1.78682 7.53096 1.78852 7.14412 2.43883L1.16581 12.4887C0.769286 13.1553 1.24964 14 2.02524 14H14.0312C14.8084 14 15.2885 13.1522 14.8887 12.4856L8.86113 2.43572ZM7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5V8C9 8.55228 8.55228 9 8 9C7.44772 9 7 8.55228 7 8V5ZM7 11C7 10.4477 7.44772 10 8 10C8.55228 10 9 10.4477 9 11V12C9 12.5523 8.55228 13 8 13C7.44772 13 7 12.5523 7 12V11Z" fill="currentColor"/>
+                </svg>
+
+                <p class="text-[12px] leading-[18px]">Click on the images to view them in full size.</p>
+            </div>
+            -->
+
             <div class="flex flex-row gap-2 mt-5">
                 <button on:click={() => window.location.assign('https://x.com/arvsrn')}>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,9 +63,10 @@
                     </svg>                        
                     Twitter
                 </button>
-                <button 
-                    on:click={copyEmail}
+                <button
+                    class="cursor-not-allowed"
                     class:copied={copied}
+                    disabled={true}
                 >
                     {#if copied}
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,69 +86,69 @@
 
         <div class="flex flex-col gap-12">
             <div class="flex flex-col gap-2">
-                <Image src="/Shots/shot01.png" />
+                <Image src="/media/shot01.png" />
             </div>
             
             <div class="flex flex-col gap-2">
-                <Image src="/Shots/shot02.png" />
+                <Image src="/media/shot02.png" />
                 <p class="text-[11px] leading-[18px] text-white/50 w-full select-none">Home screen for <a href="https://www.unriddle.ai">Unriddle</a>'s app redesign concept</p>
             </div>
             
             <div class="flex flex-col gap-2">
-                <Image src="/Shots/shot03.png" />
+                <Image src="/media/shot03.png" />
                 <p class="text-[11px] leading-[18px] text-white/50 w-full select-none">Kanban view screen I designed for <a href="https://www.ghosteams.com">Ghosteams</a>.</p>
             </div>
             
             <div class="flex flex-col gap-2">
-                <Image src="/Shots/shot04.png" />
+                <Image src="/media/shot04.png" />
                 <p class="text-[11px] leading-[18px] text-white/50 w-full select-none">Onboarding flow for <a href="https://www.unriddle.ai">Unriddle</a>'s app redesign concept.</p>
             </div>
             
             <div class="flex flex-col gap-2">
-                <Image src="/Shots/shot05.png" />
+                <Image src="/media/shot05.png" />
                 <p class="text-[11px] leading-[18px] text-white/50 w-full select-none">Empty note screen for <a href="https://www.unriddle.ai">Unriddle</a>'s app redesign concept.</p>
             </div>
             
             <div class="flex flex-col gap-2">
-                <Image src="/Shots/shot06.png" />
+                <Image src="/media/shot06.png" />
             </div>
             
             <div class="flex flex-col gap-2">
-                <Image src="/Shots/shot07.png" />
+                <Image src="/media/shot07.png" />
                 <p class="text-[11px] leading-[18px] text-white/50 w-full select-none">Bento section for an issue tracking tool.</p>
             </div>
             
             <div class="flex flex-col gap-2">
-                <Image src="/Shots/shot08.png" />
+                <Image src="/media/shot08.png" />
                 <p class="text-[11px] leading-[18px] text-white/50 w-full select-none">Dashboard for <a href="https://www.ghosteams.com">Ghosteams</a>.</p>
             </div>
             
             <div class="flex flex-col gap-2">
-                <Image src="/Shots/shot09.png" />
+                <Image src="/media/shot09.png" />
                 <p class="text-[11px] leading-[18px] text-white/50 w-full select-none">Chat with PDF for <a href="https://www.unriddle.ai">Unriddle</a>'s app redesign concept.</p>
             </div>
             
             <div class="flex flex-col gap-2">
-                <Image src="/Shots/shot10.png" />
+                <Image src="/media/shot10.png" />
                 <p class="text-[11px] leading-[18px] text-white/50 w-full select-none">Moodboard app exploration.</p>
             </div>
             
             <div class="flex flex-col gap-2">
-                <Image src="/Shots/shot11.png" />
+                <Image src="/media/shot11.png" />
                 <p class="text-[11px] leading-[18px] text-white/50 w-full select-none">Chat with recording screen for <a href="https://www.unriddle.ai">Unriddle</a>'s app redesign concept.</p>
             </div>
             
             <div class="flex flex-col gap-2">
-                <Image src="/Shots/shot12.png" />
+                <Image src="/media/shot12.png" />
             </div>
             
             <div class="flex flex-col gap-2">
-                <Image src="/Shots/shot13.png" />
+                <Image src="/media/shot13.png" />
                 <p class="text-[11px] leading-[18px] text-white/50 w-full select-none">Issue details screen for <a href="https://www.ghosteams.com">Ghosteams</a>.</p>
             </div>
             
             <div class="flex flex-col gap-2">
-                <Image src="/Shots/shot14.png" />
+                <Image src="/media/shot14.png" />
                 <p class="text-[11px] leading-[18px] text-white/50 w-full select-none">1.5px stroke, 16×16px icons for <a href="https://www.x.com/runicdesign">Runic</a>.</p>
             </div>
         </div>
@@ -172,7 +182,7 @@
         @apply bg-white/[.025] select-none rounded-full pl-1.5 pr-2.5 py-0.5 size-fit border-dashed border-white/5 border-[1px] flex flex-row items-center gap-1 text-xs leading-[22px] text-white transition-colors duration-150;
     }
 
-    button:hover {
+    button:hover:not(:disabled) {
         @apply bg-white/[.05] border-white/[.075];
     }
 

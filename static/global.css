@@ -1,23 +1,41 @@
 @font-face {
-    font-family: 'Fakt Pro';
-    src: url('./FaktPro-Normal.ttf');
+    font-family: Lausanne;
+    font-weight: 500;
+    src: url(./TWKLausanne-500.ttf);
+}
+
+@font-face {
+    font-family: Lausanne;
+    font-weight: 400;
+    src: url(./TWKLausanne-400.ttf);
+}
+
+@font-face {
+    font-family: Menlo;
+    src: url(./Menlo.ttf);
+}
+
+.mono {
+    font-family: Menlo;
 }
 
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
-    text-rendering: geometricPrecision;
-    -webkit-font-smoothing: antialiased;
+    background: #FFFFFF;
+    font-family: Lausanne;
+    font-weight: 400;
+}
 
-    font-family: 'Fakt Pro';
-    font-size: 14.5px;
-
-    background-color: #111111;
-    color: #ededed;
+::selection {
+    background: rgba(12, 140, 233, 0.25);
 }
 
 [data-animate] {
@@ -36,21 +54,4 @@ body {
         transform: translateY(0px);
         opacity: 100%;
     }
-}
-
-::selection {
-    background: rgba(50, 151, 253, 0.15);
-    color: white;
-}
-
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: #0a0a0a;
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.15);
 }
