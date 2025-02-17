@@ -1,7 +1,5 @@
 <script lang="ts">
-    import { fade } from "svelte/transition";
     import Image from "./Image.svelte";
-    import Music from "./Music.svelte";
 
     let time: Date;
     let copied = false;
@@ -57,14 +55,14 @@
             -->
 
             <div class="flex flex-row gap-2 mt-5">
-                <button on:click={() => window.location.assign('https://x.com/arvsrn')}>
+                <button class="bg-white/[.025] select-none rounded-full pl-1.5 pr-2.5 py-0.5 size-fit border-dashed border-white/5 border-[1px] flex flex-row items-center gap-1 text-xs leading-[22px] text-white transition-colors duration-150 hover:bg-white/[.05] hover:border-white/[.075] cursor-pointer" on:click={() => window.location.assign('https://x.com/arvsrn')}>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M2.78122 1.99512C2.50934 1.99512 2.25875 2.14226 2.12627 2.37968C1.9938 2.6171 2.00019 2.90763 2.14297 3.139L5.8285 9.111L2.2353 12.7042C1.9424 12.9971 1.9424 13.472 2.23529 13.7649C2.52819 14.0578 3.00306 14.0578 3.29595 13.7649L6.63804 10.4228L8.62583 13.6438C8.76243 13.8651 9.00397 13.9999 9.26407 13.9999H13.2641C13.536 13.9999 13.7865 13.8528 13.919 13.6153C14.0515 13.3779 14.0451 13.0874 13.9023 12.856L10.2015 6.8593L13.7678 3.29303C14.0607 3.00013 14.0607 2.52526 13.7678 2.23237C13.4749 1.93947 13.0001 1.93947 12.7072 2.23237L9.392 5.54752L7.41946 2.35123C7.28286 2.12989 7.04133 1.99512 6.78122 1.99512H2.78122ZM9.68255 12.4999L4.12539 3.49512H6.36275L11.9199 12.4999H9.68255Z" fill="currentColor" fill-opacity="0.5"/>
                     </svg>                        
                     Twitter
                 </button>
                 <button
-                    class="cursor-not-allowed"
+                    class="bg-white/[.025] select-none rounded-full pl-1.5 pr-2.5 py-0.5 size-fit border-dashed border-white/5 border-[1px] flex flex-row items-center gap-1 text-xs leading-[22px] text-white transition-colors duration-150 cursor-not-allowed"
                     class:copied={copied}
                     disabled={true}
                 >
@@ -176,14 +174,6 @@
 
     a:hover {
         @apply text-[#C2E6FF];
-    }
-
-    button {
-        @apply bg-white/[.025] select-none rounded-full pl-1.5 pr-2.5 py-0.5 size-fit border-dashed border-white/5 border-[1px] flex flex-row items-center gap-1 text-xs leading-[22px] text-white transition-colors duration-150;
-    }
-
-    button:hover:not(:disabled) {
-        @apply bg-white/[.05] border-white/[.075];
     }
 
     button.copied {
